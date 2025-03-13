@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>TELEports - Report Issue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            /* Centers logo and title */
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        .about {
+            text-align: justify;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="icon.svg" alt="TELEports Logo" width="150">
+            <h1>About TELEports</h1>
+        </div>
+        <p class="about">
+            TELEports is a dedicated Telegram client for Ubuntu Touch, offering core messaging functionalities while
+            aiming to expand with additional features in the future. It works seamlessly across most Ubuntu LTS
+            versions, ensuring a smooth and secure user experience.<br><br>
+            Developed by HACKONAUTS, a team of dedicated students from REVA University, Bangalore, India, TELEports was
+            built as a part of the FOSSFest Winter 2025 Hackathon. Our goal is to contribute to the open-source
+            ecosystem by enhancing Telegram’s usability on Ubuntu Touch.<br><br>
+            As an open-source project, TELEports welcomes community feedback and contributions. Stay tuned for future
+            updates as we continue improving the app with new features and optimizations!
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Report an Issue</h2>
+        <form action="https://formspree.io/f/mrbpgddd" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="issue">Describe the Issue:</label>
+                <textarea id="issue" name="issue" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit Issue</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
